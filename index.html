@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> my profil</title>
+</head>
+
+<body>
+    
+    <section class="banner">
+        <header>
+            <a href="" class="logo">My Profile</a>
+            <div class="toggle"></div>
+        </header>
+        <video src="huu.gif" type="video/mp4"class="men" autoplay loop muted></video>
+        </div>
+        <div class="content">
+            <div class="contentBx">
+                <h4>Hello,</h4>
+                <h2>I'am Adam Caesar E.H</h2>
+                <h3>Junior Developer</h3>
+                <p>I am a responsible, disciplined, confident, honest, friendly person, able to work individually or in groups</p>
+                <a href="mailto:maasurtimin@gmail.com">Hire Me</a>
+                <a href="cv.pdf">Download CV</a>
+            </div>
+        </div>
+
+
+        <ul class="menu">
+            <li><a href="https://menu.adammmmxx11.repl.co">Menu</a></li>
+            <li><a href="https://aboutme.adammmmxx11.repl.co">About</a></li>
+            <li><a href="mailto:massurtimin@gmail.com">Contact</a></li>
+        </ul>
+
+        <img src="1.png" alt="" class="elements" data-speed="8">
+        <img src="2.png" alt="" class="elements" data-speed="6">
+        <img src="3.png" alt="" class="elements" data-speed="-10">
+        <img src="4.png" alt="" class="elements" data-speed="-6">
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+<script>
+/*
+ * Modal popup
+ */
+// Get the modal
+var modal = $('#modalDialog');
+
+// Get the button that opens the modal
+var btn = $("#mbtn");
+
+// Get the  element that closes the modal
+var span = $(".close");
+
+$(document).ready(function(){
+    // When the user clicks the button, open the modal 
+    btn.on('click', function() {
+        modal.show();
+    });
+    
+    // When the user clicks on  (x), close the modal
+    span.on('click', function() {
+        modal.hide();
+    });
+});
+
+// When the user clicks anywhere outside of the modal, close it
+$('body').bind('click', function(e){
+    if($(e.target).hasClass("modal")){
+        modal.hide();
+    }
+});
+</script>
